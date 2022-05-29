@@ -128,6 +128,8 @@
   /*
   7. С помощью JS необходимо изменить цвет заднего фона каждого второго тега li.
    */
+  const listItems = list.querySelectorAll('li:nth-child(2n)');
+  listItems.forEach(el => el.style.backgroundColor = 'orange');
 
 </script>
 </body>
