@@ -82,6 +82,10 @@
   7. Создайте тег `p`, запишите внутри него текст "Привет" и добавьте созданный
   тег в начало элемента, который имеет класс "card".
    */
+  const p = document.createElement('p');
+  p.textContent = 'Привет';
+  const cardElement = document.querySelector('.card');
+  cardElement.insertAdjacentElement('afterbegin', p);
 
 
   /*
