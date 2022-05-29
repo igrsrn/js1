@@ -79,6 +79,13 @@
   которому был совершен клик.
   Необходимо использовать делегирование.
   */
+ document.body.addEventListener('click', function(e) {
+  if(!e.target.classList.contains('super_element')) {
+    console.log('класс super_element не присутствует в теге ' + e.target.nodeName.toLowerCase());
+  } else {
+    console.log(`класс ${e.target.classList} присутствует в элементе ${e.target.nodeName.toLowerCase()}`);
+  }
+ })
 
 
   /*
