@@ -105,6 +105,12 @@
   Если клик был не по кнопке, то ничего выводить не нужно.
   Необходимо использовать делегирование.
    */
+  const list = document.querySelector('ul');
+  list.addEventListener('click', function(e) {
+    if(e.target.nodeName === 'BUTTON') {
+      console.log(`${e.target.textContent}`);
+    }
+  })
 
 
   /*
