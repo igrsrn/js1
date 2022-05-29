@@ -33,6 +33,9 @@
   "super-dropdown", необходимо использовать методы forEach и querySelectorAll и
   свойство classList у элементов.
    */
+  let dropDownElements = document.querySelectorAll('.dropdown-item');
+  console.log(dropDownElements);
+  dropDownElements.forEach(el => el.classList.toggle('super-dropdown'));
 
 
   /*
