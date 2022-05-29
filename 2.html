@@ -90,6 +90,10 @@
   Вывод каждого атрибута и значений должен выглядеть следующим образом (пример):
   Атрибут "class" содержит значение "btn btn-secondary dropdown-toggle"
    */
+  const dropAndDropdownToggleEl = document.querySelector('.btn,dropdown-toggle');
+  for(const key of dropAndDropdownToggleEl.attributes) {
+    console.log(`${key.name} = ${key.textContent}`);
+  }
 
 
 </script>
