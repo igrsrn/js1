@@ -75,6 +75,13 @@
   отображенный товар на странице на созданную копию. У данной копии также
   должен правильно работать код из 3-го задания.
    */
+  const cloneProduct = document.querySelector('.product').cloneNode(true);
+  cloneProduct.children[1].setAttribute('src', 'https://picsum.photos/id/1080/200/300');
+  cloneProduct.children[0].textContent = 'Товар 4';
+
+  const lastProduct = document.querySelectorAll('.product')[2];
+  lastProduct.replaceWith(cloneProduct);
+
 
 
   /*
