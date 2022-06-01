@@ -49,6 +49,11 @@
   /*
   2. Установите всем элементам с классом "product" внешний отступ справа 50px.
    */
+  const productItems = document.querySelectorAll('.product');
+  productItems.forEach(item => {
+    item.style.setProperty('margin-right', '60px');
+    console.log(window.getComputedStyle(item).marginRight);
+  });
 
 
   /*
