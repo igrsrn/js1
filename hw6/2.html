@@ -78,6 +78,12 @@
   1) добавить два класса: animate__animated и animate__fadeInLeftBig
   2) поставить данному элементу стиль visibility в значение 'visible'.
    */
+  const messageButton = document.querySelector('.messageBtn');
+  const blockMessage = document.querySelector('.message');
+  messageButton.addEventListener('click', () => {
+    blockMessage.classList.add('animate__animated', 'animate__fadeInLeftBig');
+    blockMessage.style.setProperty('visibility', 'visible');
+  })
 
 
   /*
