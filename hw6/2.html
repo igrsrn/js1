@@ -65,6 +65,11 @@
   должно моментально отображаться в span. То есть при печати в input'е тег span
   также должен меняться.
   */
+ const inputText = document.querySelector('#from');
+ let spanText = document.querySelector('span');
+ inputText.addEventListener('input', (e) => spanText.textContent = e.target.value);
+ console.dir(inputText);
+ console.log(spanText);
 
 
   /*
