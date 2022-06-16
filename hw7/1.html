@@ -86,6 +86,16 @@
   перетаскивании ползунка.
    */
 
+  const inputText = document.getElementById('inputDiv');
+
+  const inputEl = document.querySelector('input[type="range"]');
+
+  inputEl.value = parseInt(getComputedStyle(inputText).fontSize);
+
+  inputEl.addEventListener('input', e => {
+    inputText.style.fontSize = e.target.value + 'px';
+  })
+
 
 </script>
 </body>
