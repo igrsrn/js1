@@ -60,6 +60,24 @@
     H99: "Однако, программирование, в итоге, принесет свои плоды.",
   };
 
+  let activeLink = document.querySelector('.active');
+
+  let textBlock = document.querySelector('.text');
+
+  document.querySelector('.nav').addEventListener('click', e => {
+
+    if(!e.target.classList.contains('nav-link')) {
+      return;
+    }
+
+    activeLink.classList.remove('active');
+
+    e.target.classList.add('active');
+
+    activeLink = e.target;
+    textBlock.textContent = panelText[activeLink.parentElement.dataset.text];
+
+  });
 
   /*
   2. Необходимо сделать так, чтобы при изменении input'а менялся и размер шрифта
